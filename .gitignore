@@ -1,0 +1,111 @@
+/target
+# -----------------------------
+# Rust / Cargo
+# -----------------------------
+/target/
+**/*.rs.bk
+*.pdb
+**/mutants.out*/
+Cargo.lock
+
+# -----------------------------
+# Secrets / local env
+# -----------------------------
+.env
+.env.*
+!.env.example
+*.local
+
+# -----------------------------
+# Temporary experiment outputs
+# -----------------------------
+tmp/
+temp/
+scratch/
+cache/
+logs/
+*.log
+
+# Generated exports / ad hoc analysis files
+*.csv.tmp
+*.tsv.tmp
+*.json.tmp
+
+# If you generate plots locally and don't want them tracked:
+# plots/
+# figures/
+
+# If you generate very large local-only datasets:
+# data/generated/
+# results/generated/
+
+# -----------------------------
+# macOS junk
+# -----------------------------
+.DS_Store
+.localized
+__MACOSX/
+.AppleDouble
+.LSOverride
+Icon[ ]
+._*
+
+# -----------------------------
+# VS Code
+# -----------------------------
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+!.vscode/*.code-snippets
+!*.code-workspace
+*.vsix
+
+# -----------------------------
+# JetBrains / RustRover / CLion
+# -----------------------------
+.idea/**/workspace.xml
+.idea/**/tasks.xml
+.idea/**/usage.statistics.xml
+.idea/**/dictionaries
+.idea/**/shelf
+.idea/**/aws.xml
+.idea/**/contentModel.xml
+.idea/**/dataSources/
+.idea/**/dataSources.ids
+.idea/**/dataSources.local.xml
+.idea/**/sqlDataSources.xml
+.idea/**/dynamic.xml
+.idea/**/uiDesigner.xml
+.idea/**/dbnavigator.xml
+.idea/**/gradle.xml
+.idea/**/libraries
+cmake-build-*/
+*.iws
+out/
+.idea_modules/
+atlassian-ide-plugin.xml
+.idea/replstate.xml
+.idea/sonarlint/
+.idea/sonarlint.xml
+com_crashlytics_export_strings.xml
+crashlytics.properties
+crashlytics-build.properties
+fabric.properties
+.idea/httpRequests
+http-client.private.env.json
+.idea/caches/build_file_checksums.ser
+.idea/.cache/.Apifox_Helper
+.idea/ApifoxUploaderProjectSetting.xml
+.idea/**/copilot.data.migration.*.xml
+
+# Uncomment these only if you want to ignore more JetBrains project files:
+# .idea/artifacts
+# .idea/compiler.xml
+# .idea/jarRepositories.xml
+# .idea/modules.xml
+# .idea/*.iml
+# .idea/modules
+# *.iml
+# *.ipr
